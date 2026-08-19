@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaNotes // Future of Memory</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="bg-animation"></div>
+
+    <div class="container">
+        <header>
+            <div class="brand">
+                <h1>NOVA<span>NOTES</span></h1>
+                <p>NEURAL_STORAGE_v1.0</p>
+            </div>
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search data stream...">
+            </div>
+        </header>
+
+        <div class="input-area glass">
+            <textarea id="noteText" placeholder="Input sequence here..."></textarea>
+            <div class="input-controls">
+                <div class="color-selectors">
+                    <button class="color-dot active blue" data-color="blue"></button>
+                    <button class="color-dot purple" data-color="purple"></button>
+                    <button class="color-dot green" data-color="green"></button>
+                    <button class="color-dot red" data-color="red"></button>
+                </div>
+                <button id="saveBtn" class="btn-primary">
+                    <i class="fas fa-plus"></i> CREATE NODE
+                </button>
+            </div>
+        </div>
+
+        <div id="notesGrid" class="notes-grid">
+            <!-- Notes injected by JS -->
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
